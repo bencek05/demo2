@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+        header {
+            background-color: #ff6f61;
+            color: white;
+            padding: 1em 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+            display: block;
+        }
+        nav a:hover {
+            background-color: #ff6f61;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .search-bar {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .search-bar input {
+            padding: 10px;
+            width: 80%;
+            max-width: 400px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .recipe {
+            margin-bottom: 20px;
+        }
+        .recipe h2 {
+            color: #333;
+        }
+        .recipe p {
+            line-height: 1.6;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Recipe Website</h1>
+    </header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#main-meals">Main Meals</a>
+        <a href="#desserts">Desserts</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="container">
+        <section id="home">
+            <h2>Home</h2>
+            <p>Welcome to our recipe website, where you can find and share your favorite recipes!</p>
+        </section>
+        <div class="search-bar">
+            <input type="text" id="search" placeholder="Search for recipes...">
+        </div>
+        <section id="recipes">
+            <h2>Recipes</h2>
+            <div id="main-meals">
+                <h3>Main Meals</h3>
+                <div class="recipe">
+                    <h4>Spaghetti Bolognese</h4>
+                    <p><strong>Ingredients:</strong> 200g spaghetti, 250g ground beef, 1 cup tomato sauce, 1 onion (diced), 2 garlic cloves (minced), 2 tbsp olive oil, salt, pepper.</p>
+                    <p><strong>Instructions:</strong> Cook spaghetti in a large pot of salted boiling water for 8-10 minutes until al dente. Heat olive oil in a skillet over medium heat. Add onion and garlic; sauté until fragrant, about 2-3 minutes. Add ground beef and cook until browned, breaking it into small pieces with a spoon. Stir in tomato sauce, reduce heat to low, and simmer for 15 minutes. Season with salt and pepper. Serve sauce over drained spaghetti and garnish with grated parmesan cheese.</p>
+                </div>
+                <div class="recipe">
+                    <h4>Grilled Chicken</h4>
+                    <p><strong>Ingredients:</strong> 4 chicken breasts, 3 tbsp olive oil, 1 tsp garlic powder, 1 tsp paprika, 1 tsp salt, 1/2 tsp black pepper.</p>
+                    <p><strong>Instructions:</strong> Preheat grill to medium heat (350°F). Mix olive oil, garlic powder, paprika, salt, and pepper. Brush mixture onto chicken breasts. Grill for 6-8 minutes per side or until internal temperature reaches 165°F. Let rest for 5 minutes before serving.</p>
+                </div>
+                <div class="recipe">
+                    <h4>Beef Stroganoff</h4>
+                    <p><strong>Ingredients:</strong> 500g beef sirloin (sliced), 1 onion (chopped), 2 cups mushrooms (sliced), 1 cup sour cream, 1 cup beef broth, 2 tbsp flour, 2 tbsp butter, salt, and pepper.</p>
+                    <p><strong>Instructions:</strong> In a skillet, melt butter over medium heat. Sauté onions and mushrooms until softened. Remove and set aside. In the same skillet, cook beef until browned. Stir in flour, then add beef broth and sour cream. Simmer for 10 minutes. Return onion and mushrooms to the skillet and cook for another 5 minutes. Serve over egg noodles or rice.</p>
+                </div>
+                <div class="recipe">
+                    <h4>Vegetable Stir-fry</h4>
+                    <p><strong>Ingredients:</strong> 2 cups mixed vegetables (broccoli, bell peppers, carrots, snow peas), 2 tbsp soy sauce, 1 tbsp sesame oil, 1 tsp ginger (minced), 1 clove garlic (minced).</p>
+                    <p><strong>Instructions:</strong> Heat sesame oil in a wok over medium-high heat. Add garlic and ginger; stir-fry for 30 seconds. Add mixed vegetables and cook for 5-7 minutes until tender-crisp. Stir in soy sauce and cook for another minute. Serve with steamed rice or noodles.</p>
+                </div>
+                <!-- Add more main meals here -->
+            </div>
+            <div id="desserts">
+                <h3>Desserts</h3>
+                <div class="recipe">
+                    <h4>Chocolate Chip Cookies</h4>
+                    <p><strong>Ingredients:</strong> 2 1/4 cups all-purpose flour, 1/2 tsp baking soda, 1 cup unsalted butter (melted), 1 cup packed brown sugar, 1/2 cup white sugar, 1 tbsp vanilla extract, 2 large eggs, 2 cups chocolate chips.</p>
+                    <p><strong>Instructions:</strong> Preheat oven to 350°F (175°C). In a bowl, mix flour and baking soda. In a separate bowl, combine melted butter, sugars, and vanilla. Beat in eggs one at a time. Gradually mix in dry ingredients. Fold in chocolate chips. Drop tablespoonfuls of dough onto baking sheets lined with parchment paper. Bake for 10-12 minutes until edges are golden brown. Cool on a wire rack.</p>
+                </div>
+                <div class="recipe">
+                    <h4>Tiramisu</h4>
+                    <p><strong>Ingredients:</strong> 6 egg yolks, 3/4 cup sugar, 1 cup mascarpone cheese, 1 1/2 cups heavy cream, 2 cups brewed espresso (cooled), 1 package ladyfingers, cocoa powder.</p>
+                    <p><strong>Instructions:</strong> Whisk egg yolks and sugar over a double boiler until thickened. Let cool. Fold in mascarpone. Whip cream to stiff peaks and fold into mascarpone mixture. Dip ladyfingers in espresso and layer with mascarpone mixture in a dish. Repeat layers. Chill for 4 hours and dust with cocoa powder before serving.</p>
+                </div>
+                <!-- Add more desserts here -->
+            </div>
+        </section>
+        <section id="about">
+            <h2>About</h2>
+            <p>This website was created to inspire food lovers with delicious recipes for every occasion. Explore our collection of main meals and desserts, and try something new today!</p>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>For any inquiries or to submit your own recipes, please contact us at recipes@example.com.</p>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 Recipe Website. All rights reserved.</p>
+    </footer>
+</body>
+</html>
